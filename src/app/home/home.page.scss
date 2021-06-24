@@ -1,27 +1,38 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.topLeft {
+  background-color:#01abce;
+  color:#fff;
+  height: 100%;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.topRight {
+  background-color:#01abce;
+  color:#fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.ion-card-footer>div {
+  display: flex;
+  background-color:#fff;
+  padding: 5px;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#container a {
-  text-decoration: none;
+.ion-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#fff;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.grid {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
