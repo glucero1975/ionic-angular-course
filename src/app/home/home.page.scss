@@ -1,17 +1,3 @@
-.topLeft {
-  background-color:#01abce;
-  color:#fff;
-  height: 100%;
-}
-
-.topRight {
-  background-color:#01abce;
-  color:#fff;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .ion-card-footer>div {
   display: flex;
   background-color:#fff;
@@ -31,8 +17,28 @@
 }
 
 .grid {
-  padding: 5px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+
+.topLeft {
+  background-color:#01abce;
+  color:#fff;
+  height: 100%;
+}
+
+.topLeft1 {
+  background-color:#01abce;
+  color:#fff;
+  height: 100%;
+}
+
+.topRight {
+  background-color:#01abce;
+  color:#fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+

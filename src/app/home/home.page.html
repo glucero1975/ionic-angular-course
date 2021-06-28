@@ -1,10 +1,28 @@
 <ion-app>
 
   <!-- top grid for cards and slider -->
-  <ion-content>
+  <ion-content class="ion-padding">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size-xl="3" size-md="6" size-xs="12">
+          <ion-card>
+            <img [src]="c.imgUrl" />
+            <ion-card-header>
+              <ion-card-subtitle>{{c.desc}}</ion-card-subtitle>
+              <ion-card-title>{{c.name}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
     <ion-grid>
       <ion-row class="first-row">
-        <ion-col size="6">
+
+        <ion-col>
           <ion-card class="topLeft">
             <ion-card-content>
               <section class="home-container">
@@ -16,12 +34,13 @@
           </ion-card>
           </ion-col>
 
-          <ion-col size="6">
+          <ion-col>
           <ion-card class="topRight">
             <ion-card-content>
               <section class="home-container1">
               <h1>Presentation collateral</h1>
               <p> Place slider here...</p>
+
             </section>
             </ion-card-content>
           </ion-card>
@@ -29,8 +48,8 @@
           </ion-row>
 
           <ion-row class="second-row">
-            <ion-col size="3">
-              <ion-card class="topLeft">
+            <ion-col size-xl="3" size-md="6" size-xs="12">
+              <ion-card class="topLeft1">
                 <ion-card-content>
                   <h1>About Conversations</h1>
                   <h2>Card Title</h2>
@@ -39,8 +58,8 @@
               </ion-card>
               </ion-col>
 
-              <ion-col size="3">
-                <ion-card class="topLeft">
+              <ion-col size-xl="3" size-md="6" size-xs="12">
+                <ion-card class="topLeft1">
                   <ion-card-content>
                     <h1>About Conversations</h1>
                     <h2>Card Title</h2>
@@ -59,8 +78,8 @@
 
 <ion-grid class="bottomGrid grid">
       <ion-row class class="bottomRow row">
-        <ion-col size-md="3" size-xs="12">
 
+ <ion-col>
 <ion-card class="card card-md has-card-footer">
   <div class="ion-card-header">Sales Coaches
     <ion-button fill="clear" position="right">
@@ -77,8 +96,7 @@
 </ion-card>
 </ion-col>
 
-<ion-col size-md="3" size-xs="12">
-
+<ion-col>
   <ion-card class="card card-md has-card-footer">
     <div class="ion-card-header">Sales Coaches
       <ion-button fill="clear" position="right">
@@ -95,8 +113,7 @@
   </ion-card>
   </ion-col>
 
-  <ion-col size-md="3" size-xs="12">
-
+  <ion-col>
     <ion-card class="card card-md has-card-footer">
       <div class="ion-card-header">Sales Coaches
         <ion-button fill="clear" position="right">
@@ -113,8 +130,7 @@
     </ion-card>
     </ion-col>
 
-    <ion-col size-md="3" size-xs="12">
-
+    <ion-col>
       <ion-card class="card card-md has-card-footer">
         <div class="ion-card-header">Sales Coaches
           <ion-button fill="clear" position="right">
