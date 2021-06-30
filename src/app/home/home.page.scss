@@ -7,6 +7,12 @@
   justify-content: space-between;
 }
 
+.ion-card-headerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .ion-card-header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +26,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 5px;
 }
 
 .topLeft {
@@ -38,7 +45,29 @@
   background-color:#01abce;
   color:#fff;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+
 }
 
+.img-wrapper {
+  min-height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ion-grid .ion-row .ion-col{
+  margin: 5px;
+  padding: 5px;
+}
+
+.ion-grid {
+  height:100%;
+
+.bottomRow {
+  height: 33.33%;
+}
+
+.topRow {
+  height:33.33%;
+}
+}
