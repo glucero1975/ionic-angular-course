@@ -42,6 +42,8 @@
 }
 
 .topRight {
+  display: flex;
+  flex-direction:column;
   background-color:#01abce;
   color:#fff;
   height: 100%;
@@ -71,3 +73,16 @@
   height:33.33%;
 }
 }
+
+.ion-button {
+  background: blue;
+}
+
+#refreshButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 400;
+}
+
