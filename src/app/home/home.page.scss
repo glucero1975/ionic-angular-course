@@ -22,37 +22,24 @@
   margin-left: 20px;
 }
 
-.grid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-}
-
 .aboutContainer {
   background-color:#01abce;
   color:#fff;
-  height: 100%;
+}
+
+.sliderContainer {
+  background-color:#01abce;
+  color:#fff;
 }
 
 .benefitsContainer {
   background-color:#01abce;
   color:#fff;
-  height: 100%;
 }
 
 .whyContainer {
   background-color:#01abce;
   color:#fff;
-  height: 100%;
-}
-
-.sliderContainer {
-  display: flex;
-  flex-direction:column;
-  background-color:#01abce;
-  color:#fff;
-  height: 100%;
 }
 
 .img-wrapper {
@@ -60,15 +47,6 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.ion-grid .ion-row .ion-col{
-  margin: 5px;
-  padding: 5px;
-}
-
-.ion-grid {
-  height:100%;
 }
 
 .ion-button {
@@ -81,5 +59,19 @@
   right: 20px;
   z-index: 400;
 }
+
+.ion-grid-container {
+  display:grid;
+  height: 100vh;
+  width: 100vw;
+  padding: 5px;
+  margin: 5px;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+
+
 
 

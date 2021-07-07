@@ -1,41 +1,38 @@
 <ion-app>
 
-  <!-- top grid for cards and slider -->
+  <!-- top row for cards and slider -->
+
   <ion-content class="ion-padding">
 
-<ion-grid class="dashboardGrid">
-
-    <ion-grid>
-      <ion-row class="firstRow">
-          <ion-col size="6" class="col-top-about">
+  <ion-grid class="container">
+    <ion-row class="firstRow">
+          <ion-col size="6">
           <ion-card class="aboutContainer">
-            <div>
             <ion-card-content>
-              <section class="home-container">
               <h1>About Conversations</h1>
               <h2>Card Title</h2>
               <p> Card Subtitle</p>
-            </section>
             </ion-card-content>
-            </div>
           </ion-card>
           </ion-col>
 
-
-          <ion-col size="6" class="col-top-slider">
+          <ion-col size="6">
           <ion-card class="sliderContainer">
             <ion-card-content>
               <div class="ion-card-headerSlider"><h1>Presentation Collaterals</h1>
                 <ion-button fill="clear" position="right">
-                  <ion-icon  slot="icon-only" name="apps-sharp"></ion-icon>
+                  <ion-icon slot="icon-only" name="apps-sharp"></ion-icon>
                 </ion-button>
               </div>
+
               <div style="position: absolute;top: 50%;left: 16px;font-size: 25px;z-index: 2;" (click)="slidePrev()">
                 <ion-icon name="arrow-back"></ion-icon>
               </div>
+
               <div style="position: absolute;top: 50%;right: 16px;font-size: 25px;z-index: 2;" (click)="slideNext()">
                 <ion-icon name="arrow-forward"></ion-icon>
               </div>
+
               <ion-slides paginationType="bullets" slidesPerView="1" pager="true">
                 <ion-slide>
                   <h1>Slide 1</h1>
@@ -49,15 +46,11 @@
               </ion-slides>
                 </ion-card-content>
                 </ion-card>
-</ion-col>
+                </ion-col>
 </ion-row>
-</ion-grid>
 
-
-
-<ion-grid>
-          <ion-row class="secondRow">
-            <ion-col size-xl="3" size-md="6" size-xs="12">
+<ion-row class="secondRow">
+            <ion-col size="3">
               <ion-card class="benefitsContainer">
                 <ion-card-content>
                   <h1>Benefits</h1>
@@ -67,7 +60,7 @@
               </ion-card>
               </ion-col>
 
-              <ion-col size-xl="3" size-md="6" size-xs="12">
+              <ion-col size="3">
                 <ion-card class="whyContainer">
                   <ion-card-content>
                     <h1>Why?</h1>
@@ -76,18 +69,13 @@
                   </ion-card-content>
                 </ion-card>
                 </ion-col>
-        </ion-row>
-        </ion-grid>
+                </ion-row>
 
-<!-- bottom grid for cards -->
+<!-- bottom row for cards -->
 
-<ion-grid>
-      <ion-row class class="bottomRow">
-
- <ion-col ion-col sizeLg="3" sizeMd="3" sizeXs="3">
-  <div class="img-wrapper">
-  </div>
-<ion-card class="card card-md has-card-footer">
+      <ion-row class class="thirdRow">
+ <ion-col size="3">
+<ion-card class="salesCoaches">
   <div class="ion-card-header">Sales Coaches
     <ion-button fill="clear" position="right">
       <ion-icon  slot="icon-only" name="apps-sharp"></ion-icon>
@@ -103,11 +91,9 @@
 </ion-card>
 </ion-col>
 
-<ion-col ion-col sizeLg="3" sizeMd="3" sizeXs="3">
-  <div class="img-wrapper">
-  </div>
-  <ion-card class="card card-md has-card-footer">
-    <div class="ion-card-header">Sales Coaches
+<ion-col size="3">
+  <ion-card class="buyerPersona">
+    <div class="ion-card-header">Buyer Persona
       <ion-button fill="clear" position="right">
         <ion-icon  slot="icon-only" name="apps-sharp"></ion-icon>
       </ion-button>
@@ -122,11 +108,9 @@
   </ion-card>
   </ion-col>
 
-  <ion-col ion-col sizeLg="3" sizeMd="3" sizeXs="3" >
-    <div class="img-wrapper">
-    </div>
-    <ion-card class="card card-md has-card-footer">
-      <div class="ion-card-header">Sales Coaches
+  <ion-col size="3">
+    <ion-card class="caseStudies">
+      <div class="ion-card-header">References and Case Studies
         <ion-button fill="clear" position="right">
           <ion-icon  slot="icon-only" name="apps-sharp"></ion-icon>
         </ion-button>
@@ -141,11 +125,9 @@
     </ion-card>
     </ion-col>
 
-    <ion-col ion-col sizeLg="3" sizeMd="3" sizeXs="3">
-      <div class="img-wrapper">
-      </div>
-      <ion-card class="card card-md has-card-footer">
-        <div class="ion-card-header">Sales Coaches
+    <ion-col size="3">
+      <ion-card class="myFavorites">
+        <div class="ion-card-header">My Favorites
           <ion-button fill="clear" position="right">
             <ion-icon  slot="icon-only" name="apps-sharp"></ion-icon>
           </ion-button>
@@ -160,11 +142,14 @@
       </ion-card>
       <ion-button class="refreshButton" color="primary" (click)="Feedback()">Feedback</ion-button>
       </ion-col>
+
 </ion-row>
-</ion-grid>
 </ion-grid>
 </ion-content>
 </ion-app>
+
+
+
 
 
 
